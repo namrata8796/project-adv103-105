@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family recognizer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h3 id="appname">Family Recognizer</h3>
+            <br> <br>
+            <p>You can recognize the following family members here:</p>
+            <br> <br>
+            <div class="text1">
+                <h5>Father</h5>
+                <hr>
+                <h5>Mother</h5>
+                <hr>
+                <h5>Brother</h5>
+                <hr>
+                <h5>Sister</h5>
+                <hr>
+
+            </div>
+<br><br>
+            <h3 id="webcamtext">Webcam: </h3>
+            <div id="webcam"></div>
+            <br> <br>
+            <h3 id="resulttext">Captured image: </h3>
+            <div id="result"></div>
+            <br> <br>
+
+            <button id="capture_btn" onclick="takeSnapshot();"> Capture image </button>
+            <br> <br>
+            <button id="identify_btn" onclick="identifyImage();"> Identify image </button>
+            <br> <br>
+
+            <h3 id="object_text">Object:&nbsp;&nbsp;<span id="object_name_result"></span></h3>
+          
+            <h3 id="accuracy_text">Accuracy:&nbsp;&nbsp;<span id="accuracy_result"></span></h3>
+            <br> <br>
+
+
+        </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

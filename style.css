@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(white 0%, #d4f4dd 100%);
+    padding-top: 50px;
+}
+
+hr{
+    border: 1px white solid;
+    background: white;
+}
+
+#appname{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #1D3557;
+}
+p{
+    font-size: 1.5em;
+    color: #5d5f61;
+}
+.text1 h5{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #457B9D;
+}
+
+#webcamtext, #resulttext, #object_text, #accuracy_text{
+    color: #E63946;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#capture_btn{
+    background-color: #A8DADC;
+    width: 30%;
+    height: 50px;
+    padding: 3px auto;
+    border-radius: 10px;
+    font-size: 1.8em;
+    border: 5px solid #f1faee;
+
+}
+#identify_btn{
+    background-color: #457B9D;
+    width: 30%;
+    height: 50px;
+    padding: 3px auto;
+    border-radius: 10px;
+    font-size: 1.8em;
+    border: 5px solid #f1faee;
+
+}
+
+#object_name_result, #accuracy_result{
+    color: #1D3557;
+    font-size: 2em;
+    font-weight: bold; 
+}
+#webcam{
+    width: 320px;
+    height: 240px;
+    border: 1px solid black;
+}
